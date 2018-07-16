@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MeProfilePicsTitle" rowHeight="253" id="KGk-i7-Jjw" customClass="MeProfilePicsTitle" customModule="Halanx" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="373" height="253"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="373" height="252.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Photos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6iR-a9-uSt">
+                        <rect key="frame" x="7" y="7" width="54" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tlC-kr-ssl">
+                        <rect key="frame" x="288" y="3" width="79" height="21"/>
+                        <state key="normal" title="Add photos">
+                            <color key="titleColor" name="Tint"/>
+                        </state>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bJL-d7-fls">
+                        <rect key="frame" x="7" y="29" width="360" height="224"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_Halanx" translatesAutoresizingMaskIntoConstraints="NO" id="Q3H-Uj-Ivm">
+                        <rect key="frame" x="7" y="29" width="144" height="213"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="213" id="z6w-tY-0LD"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fir-yP-oxj">
+                        <rect key="frame" x="304" y="29" width="59" height="213"/>
+                        <color key="backgroundColor" name="Tint"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="213" id="84d-7Q-AIk"/>
+                            <constraint firstAttribute="width" constant="59" id="sDS-GJ-lV8"/>
+                        </constraints>
+                        <state key="normal" title="See All">
+                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_Halanx" translatesAutoresizingMaskIntoConstraints="NO" id="aiv-e2-rGB">
+                        <rect key="frame" x="166" y="29" width="137" height="213"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="213" id="1AJ-HT-8Ew"/>
+                            <constraint firstAttribute="width" constant="137" id="js1-Xb-GQU"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="6iR-a9-uSt" firstAttribute="leading" secondItem="Q3H-Uj-Ivm" secondAttribute="leading" id="1LN-Pi-nmj"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="bJL-d7-fls" secondAttribute="bottom" constant="-11" id="3Un-RW-MAg"/>
+                    <constraint firstItem="aiv-e2-rGB" firstAttribute="bottom" secondItem="Fir-yP-oxj" secondAttribute="bottom" id="3h2-Lx-Qrj"/>
+                    <constraint firstItem="Q3H-Uj-Ivm" firstAttribute="bottom" secondItem="aiv-e2-rGB" secondAttribute="bottom" id="8eH-ao-AFV"/>
+                    <constraint firstItem="bJL-d7-fls" firstAttribute="top" secondItem="6iR-a9-uSt" secondAttribute="bottom" constant="1" id="DB0-Hp-Qur"/>
+                    <constraint firstItem="bJL-d7-fls" firstAttribute="leading" secondItem="Q3H-Uj-Ivm" secondAttribute="leading" id="HEe-vX-QyJ"/>
+                    <constraint firstItem="aiv-e2-rGB" firstAttribute="top" secondItem="Fir-yP-oxj" secondAttribute="top" id="IMb-BL-Dks"/>
+                    <constraint firstItem="bJL-d7-fls" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Mwn-Up-30g"/>
+                    <constraint firstItem="Q3H-Uj-Ivm" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="RjO-xO-BOr"/>
+                    <constraint firstItem="aiv-e2-rGB" firstAttribute="leading" secondItem="Q3H-Uj-Ivm" secondAttribute="trailing" constant="15" id="TXc-vF-QuV"/>
+                    <constraint firstItem="bJL-d7-fls" firstAttribute="top" secondItem="Fir-yP-oxj" secondAttribute="top" id="W3j-nj-Hwe"/>
+                    <constraint firstItem="tlC-kr-ssl" firstAttribute="trailing" secondItem="bJL-d7-fls" secondAttribute="trailing" id="b66-5M-VPw"/>
+                    <constraint firstItem="6iR-a9-uSt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-9" id="cyE-30-t7h"/>
+                    <constraint firstItem="Fir-yP-oxj" firstAttribute="leading" secondItem="aiv-e2-rGB" secondAttribute="trailing" constant="1" id="fEq-7e-zKl"/>
+                    <constraint firstItem="6iR-a9-uSt" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-4" id="gNb-yq-VOG"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Fir-yP-oxj" secondAttribute="trailing" constant="-6" id="ghp-56-JM8"/>
+                    <constraint firstItem="Q3H-Uj-Ivm" firstAttribute="top" secondItem="aiv-e2-rGB" secondAttribute="top" id="iuh-ai-AGP"/>
+                    <constraint firstItem="bJL-d7-fls" firstAttribute="top" secondItem="tlC-kr-ssl" secondAttribute="bottom" constant="5" id="qLG-aG-aCI"/>
+                    <constraint firstItem="tlC-kr-ssl" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-8" id="sbr-lq-1lr"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="60.5" y="48.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="logo_Halanx" width="904" height="956"/>
+        <namedColor name="Tint">
+            <color red="1" green="0.24300000071525574" blue="0.1289999932050705" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
